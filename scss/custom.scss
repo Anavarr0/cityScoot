@@ -1,0 +1,76 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 550px,
+  md: 600px,
+  lg: 960px,
+  xl: 1100px
+);
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    list-style: none;
+    max-width: 250px;
+  }
+
+$font-color-p: 	grayscale(#ad4038);
+$font: Arial, Helvetica, sans-serif;
+
+p {
+  color: $font-color-p;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+h2, h3 {
+  font-family: $font;
+  size: 10px;
+}
+
+$intro-margin: auto;
+
+#intro{
+  margin: $intro-margin;
+  text-align: center;
+
+}
+
+.top-buffer{
+  margin-top:25px;
+
+}
+
+$banner-width: 600px;
+
+
+#banner{
+  max-width: $banner-width;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+$image-size-helmet: 300px;
+
+#banner-helmet{
+  max-width: $image-size-helmet;
+  margin-left: auto;
+  margin-right: auto;
+}
+#table{
+  margin: $intro-margin;
+  margin-right: 25px;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+#gmap iframe, #gmap object, #gmap embed {
+  width: 100%;
+}
+#soho-info{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import "../bootstrap/scss/bootstrap.scss";
