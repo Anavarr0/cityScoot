@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="scripts/get-routes.js"></script>
     <title>CityScoot - Routes</title>
   </head>
   <body>
@@ -57,95 +58,28 @@
           Each tour takes approximately four hours to complete. There are always short stops for drinks and a longer stop for</p>
     </div>
 
-    <div class="row"  id="table">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Tour</th>
-            <th scope="col">Day</th>
-            <th scope="col">Start</th>
-            <th scope="col">End</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Camden Town</td>
-            <td>Sunday</td>
-            <td>9am</td>
-            <td>1pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Regents Park</td>
-            <td>Sunday</td>
-            <td>10am</td>
-            <td>2pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Soho</td>
-            <td>Saturday</td>
-            <td>9am</td>
-            <td>1pm</td>
-            <td><a href="route.html">Book Now</a></td>
-          </tr>
-          <tr>
-            <td>Hampstead Heath </td>
-            <td>Sunday</td>
-            <td>9am</td>
-            <td>1pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Greenwich </td>
-            <td>Sunday</td>
-            <td>9am</td>
-            <td>9am</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Hyde Park</td>
-            <td>Saturday</td>
-            <td>10am</td>
-            <td>2pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Southbank</td>
-            <td>Sunday</td>
-            <td>11am</td>
-            <td>3pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>City of London</td>
-            <td>Sunday</td>
-            <td>11am</td>
-            <td>3pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Wapping </td>
-            <td>Sunday</td>
-            <td>11am</td>
-            <td>3pm</td>
-            <td>Book Now</td>
-          </tr>
-          <tr>
-            <td>Bloomsbury</td>
-            <td>Sunday</td>
-            <td>9am</td>
-            <td>1pm</td>
-            <td>Book Now</td>
-          </tr>
-
-          </tbody>
-        </table>
-
-      </div>
-
-
+    <div class="row">
+			<div class="col">
+				<table class="table table-striped table-responsive small" id="datatable">
+					<thead>
+						<tr>
+						  <th scope="col">Name</th>
+						  <th scope="col">Day</th>
+						  <th scope="col">Time</th>
+              <th scope="col">Highlights</th>
+              <th scope="col">Details</th>
+						</tr>
+					</thead>
+					<tbody id="insertpoint">
+					<!-- Data displayed here -->
+					</tbody>
+				</table>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+  <!--footer-->
     <footer class="container-fluid mt-3 border-top">
       <p class="text-right p-1">&copy; <a href = "#">CityScoot</a> <a href = "#">Privacy</a> <a href = "#">Terms</a></p>
     </footer>

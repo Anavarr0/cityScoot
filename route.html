@@ -8,7 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
-    <title>CityScoot - Soho</title>
+
+
+
+    <title>CityScoot</title>
   </head>
   <body>
 
@@ -31,7 +34,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item active" aria-current="page"><a class="nav-link" href="routes.html">Routes</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="route.html">&nbsp;Soho</a>
+                <a class="nav-link" href="route.html">&nbsp;Route Details</a>
               </li>
             </ol>
             <li class="nav-item">
@@ -50,31 +53,27 @@
         </div>
     </nav>
     <!--header-->
-    <header class="container" id="page-header">
-  		<h2 class="display-4 text-center">Soho Route</h2>
-    </header>
-    <div id="banner">
-      <img class="img-fluid card-img-top rounded" src="images/soho-image.jpg" alt="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Route Details</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <span data-toggle="tooltip" data-placement="right" title="Add to Favorites">
+          <button id="addtofavorites" class="btn btn-info mt-3" data-toggle="modal" data-target="#favorites-modal">
+             <i class="fas fa-star"></i>
+          </button>
+        </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mt-4" id="insertpoint">
+          <!-- Data inserted here -->
+        </div>
+      </div>
     </div>
-
-
-    <!-- main -->
-    <div class="container" id="soho-info">
-      <dl class="row">
-        <dt class="col-sm-3">Tour name:</dt>
-        <dd class="col-sm-9">Soho</dd>
-        <dt class="col-sm-3">Day:</dt>
-        <dd class="col-sm-9">Saturday</dd>
-        <dt class="col-sm-3">Ends:</dt>
-        <dd class="col-sm-9">1pm</dd>
-        <dt class="col-sm-3">Highlights:</dt>
-        <dd class="col-sm-9">China Town, Soho Square, Theatre Land, Gay Town, Italian Soho. Golden Square.</dd>
-        <dt class="col-sm-3">Guide:</dt>
-        <dd class="col-sm-9">Ron Cray</dd>
-      </dl>
-
-    </div>
-
     <!-- footer -->
     <footer class="container-fluid mt-3 border-top">
       <p class="text-right p-1">&copy; <a href = "#">CityScoot</a> <a href = "#">Privacy</a> <a href = "#">Terms</a></p>
