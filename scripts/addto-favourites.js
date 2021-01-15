@@ -2,13 +2,13 @@ let addToFavsBtn = document.getElementById("addtofavorites");
 addToFavsBtn.onclick = function() {
 	const url = $(location).attr("search"); 
 	const params = new URLSearchParams(url);
-	const routelId = params.get("routelId");
+	const routeId = params.get("routeID");
 	let routes;
 	if (localStorage.getItem("routes") === null) {
 		routes = [];
 	} else {
 		routes = JSON.parse(localStorage.getItem("routes"));
 	}
-	routes.push(routelId);
+	routes.push(routeId);
 	localStorage.setItem('routes', JSON.stringify(routes));
-}
+}	

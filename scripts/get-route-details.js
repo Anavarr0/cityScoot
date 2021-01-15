@@ -29,8 +29,8 @@ function displayRouteDetails () {
             var currentRouteID = parseInt(params.get("routeID"));
             
             dataText += "<h4>" + data.routes[currentRouteID].name + "</h4>" +
-            "<img src='images/" + data.routes[currentRouteID].image + "' class='float-left mb-4' alt='Image of route'>" +
-            "<table class='table table-striped'><tbody><tr><th>Start Point:</th><td>" + 
+            "<img src='images/" + data.routes[currentRouteID].image + "' class='float-center mb-4' alt='Image of route'>" +
+            "<table class='table table-bordered'><tbody><tr><th>Start Point:</th><td>" + 
             data.routes[currentRouteID].startLat + " / " + data.routes[currentRouteID].startLng +
             "</td></tr><tr><th>End Point:</th><td>" + 
             data.routes[currentRouteID].endLng + " / " + data.routes[currentRouteID].endLng +

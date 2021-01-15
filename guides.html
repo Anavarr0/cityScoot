@@ -4,10 +4,24 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+   
+  
+ 
+    
+
+
+
+   
+
     <title>CityScoot - Guides</title>
   </head>
   <body>
@@ -51,71 +65,37 @@
       <h2 class="display-4 text-center">Guides</h2>
     </header>
 
-    <div class="row">
-      <div class="col-sm text-center">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="images/guide-placeholder-image.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">
-                <p><b>Name:</b> Harry Hobsbawm</p>
-                <p><b>Age:</b> 42</p>
-                <p><b>Tours:</b> Camden Town, Hampstead Heath, City of London</p>
-                <p><b>Occupation:</b> Professional Tour Guide.</p>
-                <p><b>Blue Badge:</b> Yes</p></p>
-            </div>
-          </div>
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table table-bordered  table-responsive mt-3" id="datatable">
+            <tbody id="insertpoint3">
+            <!-- Data displayed here -->
+            </tbody>
+          </table>
         </div>
-
-        <div class="col-sm text-center">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/guide-placeholder-image.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">
-                <p><b>Name:</b> Celia Miller</p>
-                <p><b>Age:</b> 38</p>
-                <p><b>Tours:</b>Camden Town, Bloomsbury, Hyde Park</p>
-                <p><b>Occupation:</b> Historian and part-time tour guide.</p>
-                <p><b>Blue Badge:</b> No. </p></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm text-center">
-          <div class="card" style="width: 18rem;">
-            <div id="card-img">
-              <img class="card-img-top" src="images/guide-placeholder-image.jpg" alt="Card image cap">
-            </div>
-              <div class="card-body">
-                  <p class="card-text">
-                    <p><b>Name:</b> Cynthia Payne</p>
-                    <p><b>Age:</b> 50</p>
-                    <p><b>Tours:</b> Notting Hill, Kensington and Chelsea, Regents Park, Fitzrovia </p>
-                    <p><b>Occupation:</b> Archivist and part-time tour guide.</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm text-center">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/guide-placeholder-image.jpg" alt="Card image cap">
-                  <div class="card-body">
-                      <p class="card-text">
-                    <p><b>Name:</b>  Ron Cray</p>
-                    <p><b>Age:</b> 43</p>
-                    <p><b>Tours:</b> Soho, Covent Garden, Southbank, City of London, Wapping, Greenwich</p>
-                    <p><b>Occupation:</b>  Journalist and part-time tour guide</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
+      </div>
+    </section>
+  <!--footer-->
     <footer class="container-fluid mt-3 border-top">
       <p class="text-right p-1">&copy; <a href = "#">CityScoot</a> <a href = "#">Privacy</a> <a href = "#">Terms</a></p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+   
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.2/firebase-app.js"></script>
+
+
+    <script src="https://firebase.google.com/docs/web/setup#available-libraries"></script>
+ 
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src=" https://firebase.google.com/docs/web/setup#available-libraries"></script>
+
+  <!-- Initialize Firebase -->
+
+<script src="scripts/get-guides.js"></script>
+</body>
+
+
 
 </html>
